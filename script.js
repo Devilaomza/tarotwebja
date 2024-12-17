@@ -19,6 +19,12 @@ window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('loaded');
 });
 
+document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('click', function () {
+        navigateWithFadeOut("doctormom.html");
+    });
+});
+
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', function () {
         navigateWithFadeOut("dailyresult.html");
